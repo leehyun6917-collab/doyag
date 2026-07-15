@@ -23,6 +23,10 @@
   --color-success-bg: #e8f8f1;
   --color-warning: #b7791f;
   --color-warning-bg: #fdf4e3;
+  --color-danger: #b91c1c;
+  --color-danger-bg: #fde3e3;
+  --color-danger-border: #f3aeae;
+  --color-danger-wash: #fdf1f1;
 
   /* Typography */
   --font-sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",

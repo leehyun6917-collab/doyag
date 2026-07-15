@@ -485,12 +485,16 @@
 }
 
 .card--concern {
-  border-color: var(--color-warning-bg);
-  background: var(--color-warning-bg);
+  border-color: var(--color-danger-border);
+  background: var(--color-danger-bg);
 }
 
 .card--concern .card__icon {
   background: var(--color-white);
+}
+
+.card--concern .card__title {
+  color: var(--color-danger);
 }
 
 .card--solution {
