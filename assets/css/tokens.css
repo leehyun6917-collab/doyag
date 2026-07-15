@@ -1,23 +1,23 @@
 /* 청춘 도약 일자리교육원 — 디자인 토큰
-   팔레트: 흰색 · 하늘색 · 짙은 남색 (신뢰감 중심) */
+   팔레트: 밝고 쨍한 코발트 블루 · 화이트 (신뢰감 중심) */
 :root {
   /* Color */
   --color-white: #ffffff;
-  --color-sky-50: #eaf5fc;
-  --color-sky-100: #d3ebf9;
-  --color-sky-300: #8fc9ec;
-  --color-sky-500: #3f9fdc;
-  --color-sky-600: #2f86c2;
-  --color-navy-900: #0d2140;
-  --color-navy-800: #123259;
-  --color-navy-700: #1b4677;
-  --color-navy-600: #285d96;
+  --color-sky-50: #eef5ff;
+  --color-sky-100: #dcebff;
+  --color-sky-300: #a8c8ff;
+  --color-sky-500: #4a90ff;
+  --color-sky-600: #2f74e0;
+  --color-navy-900: #0058d6;
+  --color-navy-800: #1568e8;
+  --color-navy-700: #2b72e0;
+  --color-navy-600: #5c9cff;
 
-  --color-text: #1a2233;
-  --color-text-muted: #4b5768;
-  --color-border: #dbe4ee;
+  --color-text: #16203a;
+  --color-text-muted: #4a5670;
+  --color-border: #cfe1ff;
   --color-surface: #ffffff;
-  --color-surface-alt: #f4f9fd;
+  --color-surface-alt: #eef5ff;
 
   --color-success: #1e9e6b;
   --color-success-bg: #e8f8f1;
@@ -34,7 +34,7 @@
   --fs-lg: 1.375rem;
   --fs-xl: 1.75rem;
   --fs-2xl: 2.25rem;
-  --fs-3xl: 2.75rem;
+  --fs-3xl: 2.1875rem;
   --lh-tight: 1.25;
   --lh-normal: 1.6;
 
@@ -53,8 +53,8 @@
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
-  --shadow-card: 0 2px 16px rgba(13, 33, 64, 0.08);
-  --shadow-sticky: 0 -4px 16px rgba(13, 33, 64, 0.1);
+  --shadow-card: 0 2px 16px rgba(0, 88, 214, 0.1);
+  --shadow-sticky: 0 -4px 16px rgba(0, 88, 214, 0.12);
 
   /* Motion */
   --transition-fast: 0.15s ease;
