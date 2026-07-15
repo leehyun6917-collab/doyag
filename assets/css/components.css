@@ -427,6 +427,33 @@
   }
 }
 
+/* 모바일에서 두 섹션이 한 화면에 함께 보이도록 카드 자체도 압축 */
+@media (max-width: 767px) {
+  .section--compact .card-slider {
+    gap: var(--space-xs);
+  }
+
+  .section--compact .card-slider .card {
+    flex-basis: 68%;
+    padding: var(--space-sm);
+  }
+
+  .section--compact .card-slider .card__icon {
+    width: 36px;
+    height: 36px;
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-2xs);
+  }
+
+  .section--compact .card-slider .card__title {
+    font-size: var(--fs-sm);
+  }
+
+  .section--compact .card-slider .card__desc {
+    font-size: var(--fs-xs);
+  }
+}
+
 .card {
   background: var(--color-white);
   border: 1px solid var(--color-border);
@@ -464,6 +491,23 @@
 
 .card--concern .card__icon {
   background: var(--color-white);
+}
+
+.card--solution {
+  background: var(--color-navy-900);
+  border-color: var(--color-navy-900);
+}
+
+.card--solution .card__icon {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.card--solution .card__title {
+  color: var(--color-white);
+}
+
+.card--solution .card__desc {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ===== Process timeline ===== */

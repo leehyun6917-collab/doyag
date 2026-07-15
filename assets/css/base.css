@@ -181,3 +181,23 @@ main {
   color: var(--color-text-muted);
   font-size: var(--fs-md);
 }
+
+/* 모바일에서 두 섹션이 한 화면에 함께 보이도록 압축한 변형 */
+@media (max-width: 767px) {
+  .section--compact {
+    padding-block: var(--space-md);
+  }
+
+  .section--compact .section__head {
+    margin-bottom: var(--space-sm);
+  }
+
+  .section--compact .section__head h2 {
+    font-size: var(--fs-lg);
+  }
+
+  .section--compact .section__desc {
+    margin-top: var(--space-2xs);
+    font-size: var(--fs-xs);
+  }
+}
