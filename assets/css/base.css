@@ -170,6 +170,11 @@ main {
   margin-bottom: var(--space-lg);
 }
 
+.section__head--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .section__eyebrow {
   display: inline-block;
   font-size: var(--fs-sm);
