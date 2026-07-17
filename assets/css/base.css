@@ -175,6 +175,15 @@ main {
   text-align: center;
 }
 
+.section__head--green .section__eyebrow {
+  color: var(--color-cta-green-dark);
+  background: var(--color-cta-green-bg);
+}
+
+.section__head--green h2 {
+  color: var(--color-cta-green-dark);
+}
+
 .section__eyebrow {
   display: inline-block;
   font-size: var(--fs-sm);

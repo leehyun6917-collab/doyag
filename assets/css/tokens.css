@@ -32,6 +32,8 @@
   --color-gray-dark: #374151;
   --color-cta-green: #5bbd4d;
   --color-cta-green-dark: #4aa33d;
+  --color-cta-green-bg: #eaf7e7;
+  --color-cta-green-border: #bfe6b8;
 
   /* Typography */
   --font-sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",

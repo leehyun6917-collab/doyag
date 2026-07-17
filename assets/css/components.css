@@ -289,6 +289,12 @@
   margin-bottom: var(--space-lg);
 }
 
+@media (max-width: 767px) {
+  .hero:not(.hero--sub) .hero__desc {
+    font-size: 13px;
+  }
+}
+
 .hero__actions {
   display: flex;
   flex-direction: column;
@@ -621,24 +627,34 @@
 
 /* ===== Self-check widget ===== */
 .self-check {
-  background: var(--color-navy-900);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-text);
+  border: 2px solid var(--color-cta-green);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
 }
 
 .self-check__title {
-  color: var(--color-white);
+  color: var(--color-cta-green-dark);
   margin-bottom: var(--space-xs);
+}
+
+.self-check .section__desc {
+  color: var(--color-text-muted);
 }
 
 .self-check__step[hidden] {
   display: none;
 }
 
+.self-check__step h4 {
+  color: var(--color-cta-green-dark);
+}
+
 .self-check__progress {
   font-size: var(--fs-sm);
-  color: var(--color-sky-300);
+  color: var(--color-cta-green-dark);
+  font-weight: 700;
   margin-bottom: var(--space-sm);
 }
 
@@ -656,29 +672,33 @@
 }
 
 .self-check__option {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--color-cta-green-bg);
+  border: 1px solid var(--color-cta-green-border);
   border-radius: var(--radius-sm);
   padding: var(--space-sm);
   text-align: left;
-  color: var(--color-white);
+  color: var(--color-text);
   font-weight: 600;
   transition: background-color var(--transition-fast);
 }
 
 .self-check__option:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: var(--color-cta-green-border);
 }
 
 .self-check__result {
   margin-top: var(--space-md);
   padding: var(--space-md);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--color-cta-green-bg);
 }
 
 .self-check__result[hidden] {
   display: none;
+}
+
+.self-check__result h3 {
+  color: var(--color-cta-green-dark);
 }
 
 .self-check__result-icon {
@@ -693,7 +713,7 @@
 }
 
 .self-check__restart {
-  color: var(--color-sky-300);
+  color: var(--color-cta-green-dark);
   font-weight: 700;
   text-decoration: underline;
 }
