@@ -2,14 +2,15 @@
 
 ## 대표 URL
 
-1. 경재사 페이지 
+1. 경쟁사 페이지 
 - 메인 페이지: https://miliconnectlink.imweb.me/koreaspringsoldier
 - 군인 상담실 : https://seongo.kr/koreaspringsoldierbasic?_gl=1*55rvcn*_ga*OTg5ODcxMTMwLjE3NzI3ODYzODI.*_ga_K0YDF8BX8Y*czE3ODM1NzY0ODMkbzUkZzEkdDE3ODM1NzY0OTEkajUyJGwwJGgw
 - 채용 버스킹 : https://seongo.kr/kmilitaryjob
 - 후기:
 
-2. 경재사 페이지 
+2. 경쟁사 페이지 
 - 메인 페이지 :  https://www.yedi.kr/ 
+
 3. 경쟁사 페이지 : https://www.jobdesign.kr/ 
 ## 참고할 요소
 
