@@ -943,6 +943,211 @@
   text-decoration: none;
 }
 
+/* ===== Document preview cards ===== */
+.doc-grid {
+  display: flex;
+  gap: var(--space-md);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: var(--space-xs);
+  margin-bottom: calc(var(--space-xs) * -1);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-sky-300) transparent;
+}
+
+.doc-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.doc-grid::-webkit-scrollbar-thumb {
+  background-color: var(--color-sky-300);
+  border-radius: 999px;
+}
+
+.doc-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.doc-grid .doc-card {
+  flex: 0 0 78%;
+  max-width: 320px;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 640px) {
+  .doc-grid .doc-card {
+    flex: 0 0 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .doc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .doc-grid .doc-card {
+    flex: initial;
+    max-width: none;
+  }
+}
+
+.doc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  box-shadow: var(--shadow-card);
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.doc-card:hover,
+.doc-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 88, 214, 0.16);
+}
+
+.doc-card__thumb {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  margin-bottom: var(--space-sm);
+  aspect-ratio: 3 / 4;
+}
+
+.doc-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.doc-card__label {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--color-navy-700);
+  background: var(--color-sky-50);
+  padding: var(--space-2xs) var(--space-xs);
+  border-radius: 999px;
+  margin-bottom: var(--space-xs);
+}
+
+.doc-card__title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: var(--space-2xs);
+}
+
+.doc-card__desc {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.doc-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-navy-800);
+  margin-top: auto;
+}
+
+.doc-grid__note {
+  margin-top: var(--space-md);
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* ===== Document lightbox ===== */
+.doc-lightbox[hidden] {
+  display: none;
+}
+
+.doc-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+
+.doc-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.72);
+}
+
+.doc-lightbox__dialog {
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  overflow: hidden;
+}
+
+.doc-lightbox__close {
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  font-size: var(--fs-md);
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.doc-lightbox__image {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+}
+
+.doc-lightbox__caption {
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 /* ===== Utility ===== */
 .text-center {
   text-align: center;

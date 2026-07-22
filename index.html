@@ -204,6 +204,84 @@
       </div>
     </section>
 
+    <!-- 발급 서류 미리보기 -->
+    <section class="section" id="doc-preview">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow">발급 서류 미리보기</p>
+          <h2>상담부터 수료까지, 이런 서류를 받아보세요</h2>
+          <p class="section__desc">
+            지휘관 제출용 서식부터 프로그램 수료 후 받는 자료까지, 실제 발급되는 서류를 샘플로 미리 확인하실 수 있어요.
+          </p>
+        </div>
+        <div class="doc-grid" role="region" aria-label="발급 서류 샘플 목록" tabindex="0">
+          <button
+            type="button"
+            class="doc-card"
+            data-doc-image="assets/images/documents/schedule-confirmation.jpg"
+            data-doc-title="프로그램 과정 예정 확인서"
+          >
+            <span class="doc-card__thumb">
+              <img
+                src="assets/images/documents/schedule-confirmation.jpg"
+                alt="프로그램 과정 예정 확인서 샘플"
+                loading="lazy"
+                width="1130"
+                height="1600"
+              />
+            </span>
+            <span class="doc-card__label">📅 지휘관 제출용</span>
+            <span class="doc-card__title">프로그램 과정 예정 확인서</span>
+            <span class="doc-card__desc">상담 신청 후, 부대에 제출할 프로그램 진행 예정 확인 서식이에요.</span>
+            <span class="doc-card__cta">크게 보기 <span aria-hidden="true">↗</span></span>
+          </button>
+
+          <button
+            type="button"
+            class="doc-card"
+            data-doc-image="assets/images/documents/career-report.jpg"
+            data-doc-title="진로 설계 분석 보고서"
+          >
+            <span class="doc-card__thumb">
+              <img
+                src="assets/images/documents/career-report.jpg"
+                alt="진로 설계 분석 보고서 샘플"
+                loading="lazy"
+                width="1130"
+                height="1600"
+              />
+            </span>
+            <span class="doc-card__label">🧭 상담 결과물</span>
+            <span class="doc-card__title">진로 설계 분석 보고서</span>
+            <span class="doc-card__desc">군 경험을 강점과 직무 역량으로 분석해 정리한 맞춤형 진로 리포트예요.</span>
+            <span class="doc-card__cta">크게 보기 <span aria-hidden="true">↗</span></span>
+          </button>
+
+          <button
+            type="button"
+            class="doc-card"
+            data-doc-image="assets/images/documents/certificate.jpg"
+            data-doc-title="프로그램 수료증"
+          >
+            <span class="doc-card__thumb">
+              <img
+                src="assets/images/documents/certificate.jpg"
+                alt="프로그램 수료증 샘플"
+                loading="lazy"
+                width="1130"
+                height="1600"
+              />
+            </span>
+            <span class="doc-card__label">🎓 수료 후 발급</span>
+            <span class="doc-card__title">프로그램 수료증</span>
+            <span class="doc-card__desc">개인 맞춤 취업 컨설팅 프로그램을 마치면 발급되는 수료 확인 서식이에요.</span>
+            <span class="doc-card__cta">크게 보기 <span aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+        <p class="doc-grid__note">※ 실제 발급 서식의 예시이며, 성명·소속 등은 예시 정보입니다.</p>
+      </div>
+    </section>
+
     <!-- 전국 네트워크 -->
     <section class="section">
       <div class="container">
@@ -358,7 +436,7 @@
           </details>
           <details class="faq-item">
             <summary class="faq-item__q">최대 며칠까지 사용할 수 있나요?</summary>
-            <p class="faq-item__a">병사는 최대 2일이며, 간부는 복무기간에 따라 최대 사용 일수가 달라질 수 있어요.</p>
+            <p class="faq-item__a">병사는 최대 2일이며, 간부는 복무기간에 따라 최대 5일까지 사용할 수 있어요.</p>
           </details>
           <details class="faq-item">
             <summary class="faq-item__q">비대면 상담도 가능한가요?</summary>
@@ -367,7 +445,7 @@
           <details class="faq-item">
             <summary class="faq-item__q">비용은 얼마인가요?</summary>
             <p class="faq-item__a">
-              상담 신청 페이지에서 대면·비대면 방식별 비용을 표로 투명하게 안내해 드리고 있어요.
+              2일 상담 기준 5만 원이며, 정확한 견적은 상담 신청 페이지에서 투명하게 안내해 드리고 있어요.
             </p>
           </details>
         </div>
@@ -407,7 +485,7 @@
         <div>
           <h2>청춘 도약 일자리교육원</h2>
           <address>
-            운영시간 평일 09:00 – 18:00<br />
+            운영시간 월~일 24시간 상담 가능<br />
             상담 문의는 <a href="http://pf.kakao.com/_sylen/chat">상담 신청 페이지</a>에서 접수해 주세요.<br />
             등록번호 623-44-01219
           </address>
@@ -441,7 +519,17 @@
     <a href="http://pf.kakao.com/_sylen/chat" class="btn btn--primary btn--block">상담 신청하기</a>
   </div>
 
+  <div class="doc-lightbox" id="doc-lightbox" hidden>
+    <div class="doc-lightbox__backdrop" data-doc-close></div>
+    <div class="doc-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="doc-lightbox-title">
+      <button type="button" class="doc-lightbox__close" data-doc-close aria-label="닫기">✕</button>
+      <img class="doc-lightbox__image" id="doc-lightbox-image" src="" alt="" />
+      <p class="doc-lightbox__caption" id="doc-lightbox-title"></p>
+    </div>
+  </div>
+
   <script src="assets/js/main.js"></script>
   <script src="assets/js/self-check.js"></script>
+  <script src="assets/js/doc-preview.js"></script>
 </body>
 </html>
