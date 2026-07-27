@@ -36,7 +36,7 @@
   --color-cta-green-border: #bfe6b8;
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Malgun Gothic", "Segoe UI", sans-serif;
   --fs-xs: 0.8125rem;
   --fs-sm: 0.9375rem;

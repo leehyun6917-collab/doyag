@@ -712,6 +712,14 @@
   gap: var(--space-xs);
 }
 
+.self-check__actions .btn--primary {
+  background-color: var(--color-cta-green);
+}
+
+.self-check__actions .btn--primary:hover {
+  background-color: var(--color-cta-green-dark);
+}
+
 .self-check__restart {
   color: var(--color-cta-green-dark);
   font-weight: 700;
@@ -747,7 +755,33 @@
   }
 }
 
+/* ===== Guide sub-block (guide.html free-alternatives section) ===== */
+.guide-block {
+  margin-top: var(--space-lg);
+}
+
+.guide-block:first-of-type {
+  margin-top: 0;
+}
+
+.guide-block > * + * {
+  margin-top: var(--space-sm);
+}
+
+.guide-block h3 {
+  margin-bottom: 0;
+}
+
 /* ===== Table (cost, docs) ===== */
+.table-scroll {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+}
+
+.table-scroll .info-table {
+  min-width: 560px;
+}
+
 .info-table {
   width: 100%;
   border-collapse: collapse;

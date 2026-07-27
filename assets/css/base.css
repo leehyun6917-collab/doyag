@@ -8,6 +8,14 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* 모바일 하단 sticky CTA 바에 앵커 이동 목적지가 가리지 않도록 여백 확보 */
+  scroll-padding-bottom: 96px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-bottom: 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -81,6 +89,12 @@ a {
   text-decoration: none;
 }
 
+/* 본문 문단 안에 있는 링크는 밑줄로 구분되도록 (버튼·네비 링크는 영향 없음) */
+main p a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 button {
   font-family: inherit;
   cursor: pointer;
@@ -143,7 +157,7 @@ textarea {
 
 main {
   /* 모바일 하단 sticky CTA 바에 콘텐츠가 가리지 않도록 여백 확보 */
-  padding-bottom: 88px;
+  padding-bottom: 112px;
 }
 
 @media (min-width: 1024px) {
