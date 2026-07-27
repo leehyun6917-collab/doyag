@@ -40,4 +40,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://xn--9d0bj6jvofy7nrsb4nou6e148bfjc.kr/board.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

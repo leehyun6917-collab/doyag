@@ -12,7 +12,7 @@ html {
   scroll-padding-bottom: 96px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   html {
     scroll-padding-bottom: 0;
   }
@@ -160,7 +160,7 @@ main {
   padding-bottom: 112px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   main {
     padding-bottom: 0;
   }
