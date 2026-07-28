@@ -85,7 +85,7 @@
   </nav>
 
   <main id="main">
-    <section class="hero hero--sub">
+    <section class="hero hero--sub hero--green">
       <div class="container hero__inner">
         <p class="hero__badge">정보 게시판</p>
         <h1 class="hero__title">군인 정보 게시판</h1>
@@ -95,7 +95,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--alt section--green-alt">
       <div class="container">
         <div class="card-grid card-grid--2">
           <a href="https://blog.naver.com/mystaryoyo4/224036679535" class="board-card" target="_blank" rel="noopener noreferrer">
@@ -176,13 +176,9 @@
               <span class="board-card__title">TMO 버스 후급 실전 가이드</span>
             </span>
           </a>
-          <!-- TODO: 12번 카드 - 제목과 URL이 아직 전달되지 않음. 정보 확인 후 이 카드 전체를 채워 주세요. 썸네일은 board-12.png 로 이미 준비됨. -->
-          <a href="#" class="board-card">
-            <span class="board-card__thumb"><img src="assets/images/board/board-12.png" alt="게시글 제목을 입력해 주세요 12" loading="lazy" /></span>
-            <span class="board-card__body">
-              <span class="board-card__label">블로그</span>
-              <span class="board-card__title">게시글 제목을 입력해 주세요 12</span>
-            </span>
+          <!-- TODO: 12번 카드 - 제목과 URL이 아직 전달되지 않음. 정보 확인되면 board-card--thumb-only 제거하고 board-card__body(label/title) 채워 주세요. 썸네일은 board-12.png 로 이미 준비됨. -->
+          <a href="#" class="board-card board-card--thumb-only" aria-label="게시글 준비 중">
+            <span class="board-card__thumb"><img src="assets/images/board/board-12.png" alt="" loading="lazy" /></span>
           </a>
         </div>
         <p class="section__desc mt-lg text-center">

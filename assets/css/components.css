@@ -783,19 +783,24 @@
   align-items: center;
   gap: var(--space-sm);
   background: var(--color-white);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-cta-green-border);
   border-radius: var(--radius-md);
   padding: var(--space-sm);
   box-shadow: var(--shadow-card);
   text-decoration: none;
   color: inherit;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
 .board-card:hover,
 .board-card:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 6px 22px rgba(0, 88, 214, 0.16);
+  border-color: var(--color-cta-green);
+  box-shadow: 0 6px 22px rgba(74, 163, 61, 0.22);
+}
+
+.board-card--thumb-only {
+  justify-content: center;
 }
 
 .board-card__thumb {
@@ -804,7 +809,7 @@
   height: 88px;
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background: var(--color-surface-alt);
+  background: var(--color-cta-green-bg);
 }
 
 .board-card__thumb img {
@@ -819,7 +824,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--fs-xl);
-  color: var(--color-text-muted);
+  color: var(--color-cta-green-dark);
 }
 
 .board-card__body {
@@ -830,7 +835,7 @@
   display: block;
   font-size: var(--fs-xs);
   font-weight: 700;
-  color: var(--color-navy-700);
+  color: var(--color-cta-green-dark);
   margin-bottom: var(--space-2xs);
 }
 
@@ -842,6 +847,24 @@
   font-weight: 700;
   color: var(--color-text);
   line-height: var(--lh-tight);
+}
+
+/* ===== Board page — 초록색(풀·청춘) 테마 ===== */
+.hero--green {
+  background: linear-gradient(180deg, var(--color-cta-green-bg) 0%, var(--color-white) 100%);
+}
+
+.hero--green .hero__badge {
+  border-color: var(--color-cta-green-border);
+  color: var(--color-cta-green-dark);
+}
+
+.hero--green .hero__title {
+  color: var(--color-cta-green-dark);
+}
+
+.section--green-alt {
+  background-color: var(--color-cta-green-bg);
 }
 
 /* ===== Table (cost, docs) ===== */
