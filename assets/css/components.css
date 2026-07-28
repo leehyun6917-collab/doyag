@@ -799,10 +799,6 @@
   box-shadow: 0 6px 22px rgba(74, 163, 61, 0.22);
 }
 
-.board-card--thumb-only {
-  justify-content: center;
-}
-
 .board-card__thumb {
   flex: 0 0 auto;
   width: 88px;
