@@ -8,8 +8,8 @@
   --color-sky-300: #bfe6b8;
   --color-sky-500: #4aa33d;
   --color-sky-600: #5bbd4d;
-  --color-navy-900: #3f6537;
-  --color-navy-800: #35532e;
+  --color-navy-900: #2e7d32;
+  --color-navy-800: #276c2b;
   --color-navy-700: #4d7a42;
   --color-navy-600: #6dcf5c;
 
@@ -64,8 +64,8 @@
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
-  --shadow-card: 0 2px 16px rgba(63, 101, 55, 0.12);
-  --shadow-sticky: 0 -4px 16px rgba(63, 101, 55, 0.15);
+  --shadow-card: 0 2px 16px rgba(46, 125, 50, 0.12);
+  --shadow-sticky: 0 -4px 16px rgba(46, 125, 50, 0.15);
 
   /* Motion */
   --transition-fast: 0.15s ease;
