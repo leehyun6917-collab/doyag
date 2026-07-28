@@ -965,10 +965,11 @@
   border-top: 1px solid var(--color-border);
 }
 
-.site-footer h2,
-.site-footer h3 {
+.footer-brand-name,
+.footer-heading {
   color: var(--color-navy-900);
   font-size: var(--fs-md);
+  font-weight: 700;
   margin-bottom: var(--space-sm);
 }
 
