@@ -254,6 +254,14 @@
   background: linear-gradient(180deg, var(--color-sky-50) 0%, var(--color-white) 100%);
 }
 
+.hero:not(.hero--sub) {
+  background-image: linear-gradient(180deg, rgba(238, 245, 255, 0.88) 0%, rgba(255, 255, 255, 0.94) 55%, var(--color-white) 100%),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
 .hero__inner {
   max-width: 720px;
   margin-inline: auto;
