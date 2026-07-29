@@ -530,8 +530,8 @@
 }
 
 .card--concern {
-  border-color: var(--color-danger-border);
-  background: var(--color-danger-bg);
+  border-color: var(--color-border);
+  background: var(--color-white);
 }
 
 .card--concern .card__icon {
@@ -539,7 +539,7 @@
 }
 
 .card--concern .card__title {
-  color: var(--color-danger);
+  color: var(--color-text);
 }
 
 .card--solution {

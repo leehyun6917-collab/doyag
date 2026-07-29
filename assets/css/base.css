@@ -176,7 +176,7 @@ main {
 
 /* "이런 걱정, 당연합니다" 전용 — 부정적/경고 톤으로 아래 해결책 섹션과 대비 */
 .section--danger {
-  background-color: var(--color-danger-wash);
+  background-color: var(--color-white);
 }
 
 .section__head {
