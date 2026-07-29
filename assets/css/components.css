@@ -357,7 +357,7 @@
   font-size: var(--fs-xs);
   font-weight: 700;
   color: var(--color-navy-700);
-  background: var(--color-sky-50);
+  background: var(--color-white);
   padding: var(--space-2xs) var(--space-sm);
   border-radius: 999px;
 }
