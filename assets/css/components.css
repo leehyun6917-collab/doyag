@@ -517,7 +517,7 @@
 
 .card--concern {
   border-color: var(--color-danger-border);
-  background: var(--color-white);
+  background: var(--color-danger-bg);
 }
 
 .card--concern .card__icon {
