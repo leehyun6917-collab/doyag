@@ -747,15 +747,16 @@
 
 /* ===== CTA banner ===== */
 .cta-banner {
-  background: var(--color-navy-900);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-gray-dark);
+  border: 2px solid var(--color-navy-900);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   text-align: center;
 }
 
 .cta-banner__title {
-  color: var(--color-white);
+  color: var(--color-gray-dark);
   margin-bottom: var(--space-sm);
 }
 
