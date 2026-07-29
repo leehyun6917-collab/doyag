@@ -76,8 +76,14 @@
 }
 
 .site-header__logo img {
-  height: 32px;
+  height: 44px;
   width: auto;
+}
+
+@media (min-width: 768px) {
+  .site-header__logo img {
+    height: 52px;
+  }
 }
 
 .site-nav {
@@ -235,11 +241,13 @@
 }
 
 .sticky-cta .btn--primary {
-  background-color: var(--color-cta-green);
+  background-color: var(--color-sky-500);
+  padding: var(--space-2xs) var(--space-md);
+  font-size: var(--fs-sm);
 }
 
 .sticky-cta .btn--primary:hover {
-  background-color: var(--color-cta-green-dark);
+  background-color: var(--color-sky-600);
 }
 
 @media (min-width: 1280px) {
