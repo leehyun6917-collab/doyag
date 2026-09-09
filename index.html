@@ -671,8 +671,23 @@
     </div>
   </div>
 
+  <div class="promo-modal" id="promo-modal" hidden>
+    <div class="promo-modal__backdrop" data-promo-close></div>
+    <div class="promo-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="promo-modal-title">
+      <button type="button" class="promo-modal__close" data-promo-close aria-label="닫기">✕</button>
+      <p class="promo-modal__badge">최저가 보장제</p>
+      <h2 id="promo-modal-title" class="promo-modal__title">더 저렴한 곳을 찾으면<br />5,000원 더 할인해 드려요</h2>
+      <ul class="promo-modal__prices">
+        <li><span>1회 상담</span><strong>25,000원</strong></li>
+        <li><span>2회 상담(심화)</span><strong>45,000원</strong></li>
+      </ul>
+      <a href="apply.html#lowest-price" class="btn btn--primary btn--block">자세히 보기</a>
+    </div>
+  </div>
+
   <script src="assets/js/main.js"></script>
   <script src="assets/js/self-check.js"></script>
   <script src="assets/js/doc-preview.js"></script>
+  <script src="assets/js/banner.js"></script>
 </body>
 </html>
