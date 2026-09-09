@@ -666,6 +666,10 @@
     grid-template-columns: repeat(5, 1fr);
     gap: var(--space-sm);
   }
+
+  .timeline--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .timeline__step {
@@ -689,6 +693,92 @@
   color: var(--color-white);
   font-weight: 800;
   margin-bottom: var(--space-sm);
+}
+
+/* ===== Article body (long-form column content) ===== */
+.article-body {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.article-body > * + * {
+  margin-top: var(--space-md);
+}
+
+.article-body h2 {
+  margin-top: 0;
+}
+
+.article-body h3 {
+  margin-top: var(--space-lg);
+}
+
+.article-body h4 {
+  margin-top: var(--space-md);
+  font-size: var(--fs-md);
+  color: var(--color-navy-800);
+}
+
+/* ===== Check list (prose bullet list) ===== */
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.check-list li {
+  position: relative;
+  padding-left: var(--space-md);
+  color: var(--color-text);
+  line-height: var(--lh-normal);
+  word-break: keep-all;
+}
+
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-navy-700);
+  font-weight: 700;
+}
+
+.check-list--numbered {
+  counter-reset: check-list-item;
+}
+
+.check-list--numbered li {
+  padding-left: var(--space-lg);
+}
+
+.check-list--numbered li::before {
+  counter-increment: check-list-item;
+  content: counter(check-list-item) ".";
+  color: var(--color-navy-800);
+}
+
+/* ===== Callout box (prose notes/tips) ===== */
+.callout {
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+  line-height: var(--lh-normal);
+  word-break: keep-all;
+}
+
+.callout p + p {
+  margin-top: var(--space-xs);
+}
+
+.callout--info {
+  background: var(--color-sky-50);
+  border-left: 4px solid var(--color-navy-700);
+}
+
+.callout--tip {
+  background: var(--color-warning-bg);
+  border-left: 4px solid var(--color-warning);
 }
 
 /* ===== FAQ accordion (native details/summary) ===== */
